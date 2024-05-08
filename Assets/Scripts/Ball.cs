@@ -25,7 +25,7 @@ public class Ball : MonoBehaviour
 
 
  public void AddStartingForce(){
-    CallAfterDelay.Create( 2.0f, () => {
+    CallAfterDelay.Create( 1.0f, () => {
         float x = Random.value <  0.5f ? -1.0f : 1.0f;
         float y = Random.value < 0.5f ? Random.Range(-1.0f, -0.5f) :  Random.Range(0.5f, 1.0f);
         _rigidBody.AddForce(new Vector2(x, y) * speed);
